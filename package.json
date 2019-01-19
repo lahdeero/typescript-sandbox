@@ -1,0 +1,31 @@
+{
+  "name": "projekti",
+  "version": "0.0.1",
+  "description": "typescript-sandbox",
+  "main": "index.ts",
+  "repository": "typescript-sandbox",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/react": "^16.4.17",
+    "@types/react-dom": "^16.0.11",
+    "nodemon": "^1.18.9",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "start": "webpack --env.platform=web && webpack --env.platform=server && node ./dist/server",
+    "watch": "nodemon",
+    "build-web": "webpack --env.platform=web",
+    "build-server": "webpack --env.platform=server"
+  },
+  "author": "Eero",
+  "license": "MIT"
+}
