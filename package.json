@@ -24,7 +24,7 @@
   "scripts": {
     "start": "webpack --env.platform=web && webpack --env.platform=server && node ./dist/server",
     "watch": "nodemon",
-	"build": "webpack --env.platform=web && webpack --env.platform=server",
+    "build": "webpack --env.platform=web && webpack --env.platform=server",
     "build-web": "webpack --env.platform=web",
     "build-server": "webpack --env.platform=server"
   },
